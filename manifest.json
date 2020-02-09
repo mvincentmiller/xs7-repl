@@ -1,0 +1,61 @@
+{
+	"include": [
+		"$(MODDABLE)/examples/manifest_base.json",
+	],
+	"modules": {
+		"*": [
+			  "./main",
+			  "./replcore",
+		]
+	},
+	"preload": [
+		"repl",
+		"replcore",
+	],
+	"strip": [],
+	"platforms": {
+		"esp": {
+			"modules": {
+				"*": [
+					"./esp/repl",
+				],
+			},
+		},
+		"esp32": {
+			"modules": {
+				"*": [
+					"./esp/repl",
+				],
+			},
+		},
+		"x-cli-mac": {
+			"modules": {
+				"~": [
+					"$(MODULES)/files/resource/*",
+				],
+				"*": [
+					"./mac/repl",
+				],
+			},
+		},
+		"x-cli-win": {
+			"modules": {
+				"~": [
+					"$(MODULES)/files/resource/*",
+				],
+				"*": [
+					"./win/repl",
+				],
+			},
+		},
+		"mac": {
+			"error": "use build target \"x-cli-mac\" instead of \"mac\""
+		},
+		"win": {
+			"error": "use build target \"x-cli-win\" instead of \"win\""
+		},
+		"...": {
+			"warning": "unsupported target"
+		},
+	}
+}
