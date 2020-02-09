@@ -50,13 +50,44 @@ void xs_repl_eval(txMachine* the)
 
 ## Issue 307
 
-1. rename `$MODDABLE-SDK/xs/sources` to `$MODDABLE-SDK/xs/sources_new`
+https://github.com/Moddable-OpenSource/moddable/issues/307
 
-2. move `sources_old` in this folder to `$MODDABLE-SDK/xs/sources` 
+- rename `$MODDABLE-SDK/xs/sources` to `$MODDABLE-SDK/xs/sources_new`
+- move `sources_old` in this folder to `$MODDABLE-SDK/xs/sources` 
 
-   https://github.com/eco747/foton/search?q=mxClosures&unscoped_q=mxClosures
+### Affected Files
 
-   https://github.com/Moddable-OpenSource/moddable/issues/307
+https://github.com/eco747/foton/search?q=mxClosures&unscoped_q=mxClosures
+
+#### xsAll.h
+
+https://github.com/eco747/foton/blob/2f9b68ca0ccc2f087f769e52f8caa30806c9484c/xs/sources/xsAll.h#L2048
+
+#### xsAPI.c
+
+https://github.com/eco747/foton/blob/2f9b68ca0ccc2f087f769e52f8caa30806c9484c/xs/sources/xsAPI.c#L1393
+
+#### xst.c
+
+https://github.com/eco747/foton/blob/2f9b68ca0ccc2f087f769e52f8caa30806c9484c/xs/tools/xst.c#L1229
+
+#### xsGlobal.c
+
+https://github.com/eco747/foton/blob/2f9b68ca0ccc2f087f769e52f8caa30806c9484c/xs/sources/xsGlobal.c#L522
+
+#### xsType.c
+
+https://github.com/eco747/foton/blob/2f9b68ca0ccc2f087f769e52f8caa30806c9484c/xs/sources/xsType.c#L1040
+
+#### xsModule.c
+
+https://github.com/eco747/foton/blob/2f9b68ca0ccc2f087f769e52f8caa30806c9484c/xs/sources/xsModule.c#L837
+
+#### xsRun.c
+
+https://github.com/eco747/foton/blob/2f9b68ca0ccc2f087f769e52f8caa30806c9484c/xs/sources/xsRun.c#L3152
+
+
 
 ## Moddable SDK
 
