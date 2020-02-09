@@ -1,6 +1,6 @@
-# XS7 repl on ESP8266EX
+# XS7 REPL on ESP8266EX
 
-build with Moddable and use `screen` for JS rEPL:
+Build with Moddable and use `screen` to connect to REPL:
 
 ```
 mcconfig -m -p esp
@@ -50,11 +50,15 @@ void xs_repl_eval(txMachine* the)
 
 ## Issue 307
 
-https://github.com/Moddable-OpenSource/moddable/issues/307
+1. rename `$MODDABLE-SDK/xs/sources` to `$MODDABLE-SDK/xs/sources_new`
 
-https://github.com/eco747/foton/search?q=mxClosures&unscoped_q=mxClosures
+2. move `sources_old` in this folder to `$MODDABLE-SDK/xs/sources` 
 
-### Moddable SDK
+   https://github.com/eco747/foton/search?q=mxClosures&unscoped_q=mxClosures
+
+   https://github.com/Moddable-OpenSource/moddable/issues/307
+
+## Moddable SDK
 
 #### About
 
@@ -70,7 +74,7 @@ https://www.moddable.com/XS7-TC-39
 
 [https://github.com/Moddable-OpenSource/moddable/blob/public/documentation/Moddable%20SDK%20-%20Getting%20Started.md#esp8266-linux](
 
-### Data Sheets
+## Data Sheets
 
 https://www.espressif.com/sites/default/files/documentation/esp8266_reset_causes_and_common_fatal_exception_causes_en.pdf
 
